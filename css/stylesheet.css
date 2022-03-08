@@ -1,0 +1,96 @@
+* {
+  cursor: default;
+}
+
+body {
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4ca1af,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4ca1af,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: fixed;
+  height: 100vh;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  background-color: steelblue;
+  width: 20vw;
+  margin: 0;
+  padding-left: 10px;
+  height: 100%;
+}
+
+input {
+  margin-left: 5px;
+  width: 20vw;
+  border: none;
+  padding: 10px 0 10px 0;
+}
+
+input:hover {
+  cursor: text;
+}
+
+div {
+  width: 150px;
+  margin: 0 auto;
+}
+
+li {
+  width: 20vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+li:nth-child(even) {
+  background-color: lightgray;
+}
+
+li:hover span i {
+  opacity: 1;
+  padding: 5px;
+  background-color: #ed2939;
+}
+
+span i {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+span i:hover {
+  cursor: pointer;
+}
+
+.selected {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#keyboard {
+  float: right;
+  margin-right: 40px;
+  width: 2px;
+  transition: color 2s;
+}
+
+#keyboard:hover {
+  cursor: pointer;
+  color: black;
+  transition: color 1s;
+}
